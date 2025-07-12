@@ -1,0 +1,29 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Hello" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olá"
+          }
+        }
+      }
+    },
+    "Stock Ticker" : {
+
+    },
+    "Tracked Stocks" : {
+
+    },
+    "WebSocket Connected" : {
+
+    },
+    "WebSocket Disconnected" : {
+
+    }
+  },
+  "version" : "1.0"
+}

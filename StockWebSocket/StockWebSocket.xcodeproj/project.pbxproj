@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B9F087F2E22A1FC00E2DFBF /* StockWebSocketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F087E2E22A1FC00E2DFBF /* StockWebSocketApp.swift */; };
+		8B9F08812E22A1FC00E2DFBF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F08802E22A1FC00E2DFBF /* HomeView.swift */; };
+		8B9F08832E22A1FE00E2DFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B9F08822E22A1FE00E2DFBF /* Assets.xcassets */; };
+		8B9F08862E22A1FE00E2DFBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B9F08852E22A1FE00E2DFBF /* Preview Assets.xcassets */; };
+		8B9F088E2E22A24200E2DFBF /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F088D2E22A24200E2DFBF /* DIContainer.swift */; };
+		8B9F08962E22A28D00E2DFBF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8B9F08952E22A28D00E2DFBF /* Localizable.xcstrings */; };
+		8B9F08982E22A32D00E2DFBF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F08972E22A32D00E2DFBF /* HomeViewModel.swift */; };
+		8B9F089D2E22A39C00E2DFBF /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F089C2E22A39C00E2DFBF /* ApiKey.swift */; };
+		8B9F08A22E22AFF500E2DFBF /* FinnhubWebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F08A12E22AFF500E2DFBF /* FinnhubWebSocketService.swift */; };
+		8B9F08A52E22BF1E00E2DFBF /* MarketHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F08A42E22BF1E00E2DFBF /* MarketHours.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8B9F087B2E22A1FC00E2DFBF /* StockWebSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockWebSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9F087E2E22A1FC00E2DFBF /* StockWebSocketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWebSocketApp.swift; sourceTree = "<group>"; };
+		8B9F08802E22A1FC00E2DFBF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8B9F08822E22A1FE00E2DFBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B9F08852E22A1FE00E2DFBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B9F088D2E22A24200E2DFBF /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		8B9F08952E22A28D00E2DFBF /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		8B9F08972E22A32D00E2DFBF /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8B9F089C2E22A39C00E2DFBF /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
+		8B9F08A12E22AFF500E2DFBF /* FinnhubWebSocketService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinnhubWebSocketService.swift; sourceTree = "<group>"; };
+		8B9F08A42E22BF1E00E2DFBF /* MarketHours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketHours.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B9F08782E22A1FC00E2DFBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B9F08722E22A1FC00E2DFBF = {
+			isa = PBXGroup;
+			children = (
+				8B9F087D2E22A1FC00E2DFBF /* StockWebSocket */,
+				8B9F087C2E22A1FC00E2DFBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B9F087C2E22A1FC00E2DFBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B9F087B2E22A1FC00E2DFBF /* StockWebSocket.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B9F087D2E22A1FC00E2DFBF /* StockWebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				8B9F088C2E22A22F00E2DFBF /* Application */,
+				8B9F08942E22A27700E2DFBF /* Resources */,
+				8B9F08902E22A25100E2DFBF /* Features */,
+				8B9F088F2E22A24800E2DFBF /* Core */,
+				8B9F08A02E22AFF500E2DFBF /* Services */,
+				8B9F08A32E22BF1E00E2DFBF /* Utils */,
+				8B9F08842E22A1FE00E2DFBF /* Preview Content */,
+			);
+			path = StockWebSocket;
+			sourceTree = "<group>";
+		};
+		8B9F08842E22A1FE00E2DFBF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8B9F08852E22A1FE00E2DFBF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8B9F088C2E22A22F00E2DFBF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8B9F087E2E22A1FC00E2DFBF /* StockWebSocketApp.swift */,
+				8B9F088D2E22A24200E2DFBF /* DIContainer.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8B9F088F2E22A24800E2DFBF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8B9F089B2E22A35000E2DFBF /* Network */,
+				8B9F089A2E22A34A00E2DFBF /* Constants */,
+				8B9F08992E22A33100E2DFBF /* Models */,
+				8B9F08932E22A27100E2DFBF /* Extensions */,
+				8B9F08922E22A26A00E2DFBF /* UI */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8B9F08902E22A25100E2DFBF /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8B9F08912E22A25800E2DFBF /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8B9F08912E22A25800E2DFBF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8B9F08802E22A1FC00E2DFBF /* HomeView.swift */,
+				8B9F08972E22A32D00E2DFBF /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8B9F08922E22A26A00E2DFBF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8B9F08932E22A27100E2DFBF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8B9F08942E22A27700E2DFBF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B9F08822E22A1FE00E2DFBF /* Assets.xcassets */,
+				8B9F08952E22A28D00E2DFBF /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B9F08992E22A33100E2DFBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B9F089A2E22A34A00E2DFBF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8B9F089C2E22A39C00E2DFBF /* ApiKey.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8B9F089B2E22A35000E2DFBF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8B9F08A02E22AFF500E2DFBF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8B9F08A12E22AFF500E2DFBF /* FinnhubWebSocketService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8B9F08A32E22BF1E00E2DFBF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8B9F08A42E22BF1E00E2DFBF /* MarketHours.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B9F087A2E22A1FC00E2DFBF /* StockWebSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B9F08892E22A1FE00E2DFBF /* Build configuration list for PBXNativeTarget "StockWebSocket" */;
+			buildPhases = (
+				8B9F08772E22A1FC00E2DFBF /* Sources */,
+				8B9F08782E22A1FC00E2DFBF /* Frameworks */,
+				8B9F08792E22A1FC00E2DFBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StockWebSocket;
+			productName = StockWebSocket;
+			productReference = 8B9F087B2E22A1FC00E2DFBF /* StockWebSocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B9F08732E22A1FC00E2DFBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					8B9F087A2E22A1FC00E2DFBF = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 8B9F08762E22A1FC00E2DFBF /* Build configuration list for PBXProject "StockWebSocket" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"pt-BR",
+			);
+			mainGroup = 8B9F08722E22A1FC00E2DFBF;
+			productRefGroup = 8B9F087C2E22A1FC00E2DFBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B9F087A2E22A1FC00E2DFBF /* StockWebSocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B9F08792E22A1FC00E2DFBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B9F08862E22A1FE00E2DFBF /* Preview Assets.xcassets in Resources */,
+				8B9F08832E22A1FE00E2DFBF /* Assets.xcassets in Resources */,
+				8B9F08962E22A28D00E2DFBF /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B9F08772E22A1FC00E2DFBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B9F089D2E22A39C00E2DFBF /* ApiKey.swift in Sources */,
+				8B9F08812E22A1FC00E2DFBF /* HomeView.swift in Sources */,
+				8B9F08A22E22AFF500E2DFBF /* FinnhubWebSocketService.swift in Sources */,
+				8B9F088E2E22A24200E2DFBF /* DIContainer.swift in Sources */,
+				8B9F087F2E22A1FC00E2DFBF /* StockWebSocketApp.swift in Sources */,
+				8B9F08982E22A32D00E2DFBF /* HomeViewModel.swift in Sources */,
+				8B9F08A52E22BF1E00E2DFBF /* MarketHours.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8B9F08872E22A1FE00E2DFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B9F08882E22A1FE00E2DFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B9F088A2E22A1FE00E2DFBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StockWebSocket/Preview Content\"";
+				DEVELOPMENT_TEAM = 4843ZXVW46;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uaialternativa.StockWebSocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B9F088B2E22A1FE00E2DFBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StockWebSocket/Preview Content\"";
+				DEVELOPMENT_TEAM = 4843ZXVW46;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uaialternativa.StockWebSocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B9F08762E22A1FC00E2DFBF /* Build configuration list for PBXProject "StockWebSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B9F08872E22A1FE00E2DFBF /* Debug */,
+				8B9F08882E22A1FE00E2DFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B9F08892E22A1FE00E2DFBF /* Build configuration list for PBXNativeTarget "StockWebSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B9F088A2E22A1FE00E2DFBF /* Debug */,
+				8B9F088B2E22A1FE00E2DFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B9F08732E22A1FC00E2DFBF /* Project object */;
+}
