@@ -1,0 +1,21 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Connected" : {
+
+    },
+    "Copy" : {
+
+    },
+    "Disconnected" : {
+
+    },
+    "Type a message..." : {
+
+    },
+    "WebSocket Chat" : {
+
+    }
+  },
+  "version" : "1.0"
+}
