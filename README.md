@@ -15,4 +15,4 @@ American Stocks price value with Web Socket connection
 ![Image for Stock iOS app](https://i.snipboard.io/jn5Jgh.jpg "Image for Stock iOS app")
 
 # Project 3 - iOS
-Chat using web sockets
+Real-time chat using web sockets
