@@ -9,6 +9,7 @@ Crypto coins values using Web Socket
 
 # Project 2 - iOS
 American Stocks price value with Web Socket connection 
+
 ![Image for Stock iOS app](https://snipboard.io/jn5Jgh.jpg "Image for Stock iOS app")
 
 # Project 3 - iOS
