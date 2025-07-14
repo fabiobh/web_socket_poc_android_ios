@@ -16,6 +16,7 @@ struct HomeView: View {
     // WebSocket service and symbols
     @StateObject private var webSocketService = FinnhubWebSocketService()
     @State private var selectedSymbols: Set<String> = ["AAPL", "MSFT", "GOOGL", "AMZN", "META"]
+    @State private var lastUpdatedSymbol: String?
     
     var body: some View {
         NavigationView {
@@ -62,6 +63,16 @@ struct HomeView: View {
                                 .foregroundColor(price >= 0 ? .green : .red)
                         }
                         .padding(.vertical, 4)
+                        .background(
+                            Group {
+                                if symbol == lastUpdatedSymbol {
+                                    Color.yellow.opacity(0.5)
+                                        .animation(.easeInOut(duration: 0.3), value: lastUpdatedSymbol)
+                                } else {
+                                    Color.clear
+                                }
+                            }
+                        )
                     }
                 }
                 .listStyle(PlainListStyle())
@@ -96,12 +107,23 @@ struct HomeView: View {
             .navigationTitle("Stock Ticker")
             .onAppear {
                 webSocketService.connect()
+                webSocketService.subscribe(to: Array(selectedSymbols))
                 setupMarketStatusCheck()
             }
             .onDisappear {
                 webSocketService.disconnect()
                 timer?.invalidate()
                 timer = nil
+            }
+            .onReceive(webSocketService.$lastUpdatedSymbol) { symbol in
+                lastUpdatedSymbol = symbol
+                if symbol != nil {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        if lastUpdatedSymbol == symbol {
+                            lastUpdatedSymbol = nil
+                        }
+                    }
+                }
             }
         }
     }

@@ -22,6 +22,7 @@ class FinnhubWebSocketService: ObservableObject {
     @Published var stockData: [String: Double] = [:] // symbol: price
     @Published var isConnected: Bool = false
     @Published var errorMessage: String?
+    @Published var lastUpdatedSymbol: String?
     
     init(apiKey: String = ApiKey.finnhubApiKey) {
         self.apiKey = apiKey
@@ -104,8 +105,8 @@ class FinnhubWebSocketService: ObservableObject {
             // Finnhub requires the subscription type to be specified (e.g., "trade" for real-time trades)
             let subscriptionMessage: [String: Any] = [
                 "type": MessageType.subscribe.rawValue,
-                "symbol": symbol,  // Stock symbol (e.g., "AAPL")
-                "subscription": "trade"  // Subscribe to trade data
+                "symbol": symbol  // Stock symbol (e.g., "AAPL")
+                // Remove "subscription": "trade"
             ]
             
             do {
@@ -238,6 +239,8 @@ class FinnhubWebSocketService: ObservableObject {
         // Process trade data
         if let dataArray = json["data"] as? [[String: Any]] {
             print("📊 Processing \(dataArray.count) data items")
+            // Add this line:
+            print("🔄 Received trade update: \(dataArray)")
             var updates: [String: Double] = [:] // symbol: price
             
             for item in dataArray {
@@ -267,6 +270,7 @@ class FinnhubWebSocketService: ObservableObject {
                 DispatchQueue.main.async { [weak self] in
                     for (symbol, price) in updates {
                         self?.stockData[symbol] = price
+                        self?.lastUpdatedSymbol = symbol
                     }
                 }
             }
